@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Сибирь — цветочное ателье в Новосибирске</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--ff);background:var(--bg);color:var(--fg);line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+section{padding:96px 0}
+.tag{color:var(--acc);font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase}
+h2{font-family:var(--fd);font-size:clamp(32px,4.4vw,54px);font-weight:var(--hw,600);line-height:1.08;margin:12px 0 14px;letter-spacing:var(--hls,-.02em)}
+.sub{color:var(--mut);max-width:600px;margin-bottom:44px;font-size:17px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--r,20px);padding:28px;transition:.3s}
+.card:hover{transform:translateY(-5px);border-color:var(--acc)}
+.card h3{font-family:var(--fd);font-size:21px;font-weight:600;margin-bottom:8px}
+.card p{color:var(--mut);font-size:15px}
+.stars{color:var(--acc);letter-spacing:3px;margin-bottom:12px}
+.who{margin-top:16px;font-size:13px;color:var(--mut)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 30px;border-radius:var(--br,99px);font-weight:600;font-size:15px;cursor:pointer;border:0;background:var(--acc);color:var(--onacc,#000);transition:.25s}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.1)}
+.btn.ghost{background:transparent;color:var(--fg);border:1px solid var(--line)}
+.btn.ghost:hover{border-color:var(--acc)}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:12px}
+.gal img{width:100%;height:100%;object-fit:cover;border-radius:var(--r,16px);transition:.4s}
+.gal img:hover{transform:scale(1.02)}
+.gal .w2{grid-column:span 2}
+.tbl{background:var(--card);border:1px solid var(--line);border-radius:var(--r,20px);overflow:hidden}
+.tr{display:grid;grid-template-columns:2fr 1fr 1fr;padding:20px 28px;border-bottom:1px solid var(--line);align-items:center;color:var(--mut)}
+.tr:last-child{border:0}.tr b{color:var(--fg);font-size:18px;font-weight:600}.tr .pr{color:var(--acc);font-weight:700;font-size:20px}
+.tr.h{font-size:12px;letter-spacing:.15em;text-transform:uppercase;background:rgba(127,127,127,.08)}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.fact{padding:26px 22px;border:1px solid var(--line);border-radius:var(--r,18px);background:var(--card)}
+.fact b{display:block;font-family:var(--fd);font-size:42px;font-weight:600;color:var(--acc);line-height:1.1}.fact span{color:var(--mut);font-size:14px}
+.cont{display:grid;grid-template-columns:.85fr 1.15fr;gap:34px}
+.cl div{padding:18px 0;border-bottom:1px solid var(--line)}
+.cl small{display:block;color:var(--mut);font-size:12px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
+.cl b{font-size:19px;font-weight:500}
+.map{border-radius:var(--r,20px);overflow:hidden;border:1px solid var(--line);min-height:380px}
+.map iframe{width:100%;height:100%;min-height:380px;border:0}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--mut);font-size:14px}
+.fl{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.rise{opacity:0;animation:rise .9s cubic-bezier(.22,1,.36,1) forwards}
+@keyframes rise{from{opacity:0;transform:translateY(24px);filter:blur(6px)}to{opacity:1;transform:none;filter:none}}
+@media(max-width:900px){.grid3,.grid4,.cont,.facts{grid-template-columns:1fr 1fr}.cont{grid-template-columns:1fr}.grid3{grid-template-columns:1fr}.gal{grid-template-columns:1fr 1fr}section{padding:64px 0}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;opacity:1!important;transform:none!important}}
+:root{--bg:#f2f4ec;--fg:#1d2a1f;--mut:#6a7868;--acc:#4f7550;--onacc:#fff;--card:#fafbf6;--line:#dbe1d0;--ff:Inter,system-ui,sans-serif;--fd:'Cormorant Garamond',Georgia,serif;--hw:500;--hls:-.02em;--r:24px}
+h2{font-size:clamp(38px,5vw,66px)}
+header{position:sticky;top:0;z-index:50;background:rgba(242,244,236,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{font-family:var(--fd);font-size:32px;font-weight:600;letter-spacing:.02em}
+nav ul{display:flex;gap:30px;list-style:none;font-size:15px}nav a:hover{color:var(--acc)}
+.hero{padding:60px 0 30px}
+.hg{display:grid;grid-template-columns:1fr 1.1fr;gap:50px;align-items:center}
+.eb{font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--acc);font-weight:500}
+h1{font-family:var(--fd);font-size:clamp(70px,11vw,160px);line-height:.88;font-weight:500;letter-spacing:-.03em;margin:18px 0 22px}h1 em{color:var(--acc)}
+.lead{font-size:19px;color:var(--mut);max-width:440px}
+.cta{display:flex;gap:14px;margin:30px 0;flex-wrap:wrap}
+.arch{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;align-items:end}
+.arch img{width:100%;object-fit:cover;border-radius:999px 999px 24px 24px;box-shadow:0 24px 50px rgba(40,60,40,.18)}
+.arch img:nth-child(1){height:360px}.arch img:nth-child(2){height:460px}.arch img:nth-child(3){height:400px}
+.arch img{animation:fl 8s ease-in-out infinite}.arch img:nth-child(2){animation-delay:-3s}.arch img:nth-child(3){animation-delay:-5s}
+@keyframes fl{50%{translate:0 -10px}}
+.cats{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:34px}.cats span{padding:9px 18px;border-radius:99px;border:1px solid var(--line);background:#fafbf6;font-size:14px;color:var(--mut)}
+.pl{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.pl .card{padding:24px}.pl .card h3{font-family:var(--fd);font-size:26px}.pl .card b{font-family:var(--fd);font-size:36px;color:var(--acc);font-weight:500;display:block;margin-top:8px}
+.sv{display:flex;flex-wrap:wrap;gap:10px}.sv span{padding:10px 20px;border-radius:99px;background:#e3ead6;color:#35503a;font-size:14px}
+.btn{box-shadow:0 10px 24px rgba(79,117,80,.3)}.btn.ghost{box-shadow:none;color:var(--fg)}
+footer{background:#1d2a1f;color:#b9c5b4;border:0}
+.map iframe{filter:saturate(.7)!important}
+@media(max-width:900px){nav ul{display:none}.hg{grid-template-columns:1fr}.pl{grid-template-columns:1fr}.arch img:nth-child(n){height:240px}}
+</style></head><body><header><div class="wrap nav"><a href="#" class="logo">Сибирь</a><nav><ul><li><a href="#catalog">Каталог</a></li><li><a href="#prices">Цены</a></li><li><a href="#photos">Фото</a></li><li><a href="#reviews">Отзывы</a></li><li><a href="#contacts">Контакты</a></li></ul></nav><a href="tel:+79139105599" class="btn" style="padding:10px 22px;font-size:14px">Заказать</a></div></header>
+<div class="hero"><div class="wrap hg"><div><div class="eb rise">Цветочное ателье · Новосибирск</div><h1 class="rise" style="animation-delay:.12s">Сибирь<br><em>в цветах</em></h1><p class="lead rise" style="animation-delay:.25s">Авторские букеты, композиции и свадебная флористика. Доставка по городу и самовывоз на улице Восход.</p><div class="cta rise" style="animation-delay:.4s"><a href="tel:+79139105599" class="btn">Заказать букет</a><a href="#prices" class="btn ghost">Смотреть цены</a></div></div>
+<div class="arch"><img src="https://avatars.mds.yandex.net/get-altay/19902702/2a0000019e1a4c469e592b5c0548491f0e87/XXL" alt=""><img src="https://avatars.mds.yandex.net/get-altay/20285938/2a000001a03d983070e961d03ba7369a5742/XXL" alt=""><img src="https://avatars.mds.yandex.net/get-altay/18396981/2a0000019a80f2047b4030203ef160b8109a/XXL" alt=""></div></div></div>
+<section id="catalog"><div class="wrap"><div class="tag">Каталог</div><h2>Что мы <em style="color:var(--acc)">собираем</em></h2><p class="sub">Разделы из каталога магазина на Яндекс Картах.</p><div class="cats"><span>Букеты до 2000 ₽</span><span>Букеты 2000–5000 ₽</span><span>Букеты от 5000 ₽</span><span>Букеты невесты</span><span>Композиции</span><span>Подарочные наборы</span><span>Розы одноголовые</span><span>Розы кустовые</span><span>Хризантемы</span><span>Альстромерии</span></div>
+<div class="facts"><div class="fact"><b>5,0</b><span>рейтинг Яндекс Карт</span></div><div class="fact"><b>100%</b><span>хвалят персонал</span></div><div class="fact"><b>95%</b><span>хвалят букеты</span></div><div class="fact"><b>145</b><span>фото на Яндекс Картах</span></div></div></div></section>
+<section id="prices" style="padding-top:0"><div class="wrap"><div class="tag">Цены</div><h2>Букеты и <em style="color:var(--acc)">композиции</em></h2><p class="sub">Примеры позиций из каталога магазина.</p><div class="pl"><div class="card"><h3>Сборный букет</h3><p>Несколько вариантов в разном бюджете</p><b>2 090 – 4 590 ₽</b></div><div class="card"><h3>Микс диантусов</h3><p>15 цветов, розово-персиковая гамма</p><b>1 890 ₽</b></div><div class="card"><h3>Микс диантусов</h3><p>25 цветов</p><b>2 990 ₽</b></div><div class="card"><h3>Микс диантусов</h3><p>35 цветов</p><b>4 190 ₽</b></div><div class="card"><h3>Букет с диантусами и кустовой розой</h3><p>«Magic Mocca»</p><b>2 890 ₽</b></div><div class="card"><h3>Сборные букеты в нежной гамме</h3><p>Разные размеры и композиции</p><b>от 2 190 ₽</b></div></div></div></section>
+<section style="padding-top:0"><div class="wrap"><div class="tag">Услуги</div><h2>Больше, чем <em style="color:var(--acc)">букет</em></h2><p class="sub">Что ещё можно заказать в магазине.</p><div class="sv"><span>Доставка</span><span>Самовывоз</span><span>Свадебная флористика</span><span>Стабилизированные цветы</span><span>Сухоцветы</span><span>Мягкие игрушки</span><span>Кашпо</span><span>Подарочная упаковка</span><span>Открытки</span></div></div></section>
+<section id="photos" style="padding-top:0"><div class="wrap"><div class="tag">Фото</div><h2>Наши <em style="color:var(--acc)">работы</em></h2><p class="sub">Реальные фото букетов.</p><div class="gal"><img src="https://avatars.mds.yandex.net/get-altay/16134335/2a00000199fbf511c34d3de83682ce776994/XXL" alt="Сибирь" loading="lazy" class="w2"><img src="https://avatars.mds.yandex.net/get-altay/20285938/2a000001a03d983070e961d03ba7369a5742/XXL" alt="Сибирь" loading="lazy"><img src="https://avatars.mds.yandex.net/get-altay/15629777/2a00000199fbf5265008e64f78fbcdd33935/XXL" alt="Сибирь" loading="lazy"><img src="https://avatars.mds.yandex.net/get-altay/18396981/2a0000019a80f2047b4030203ef160b8109a/XXL" alt="Сибирь" loading="lazy"><img src="https://avatars.mds.yandex.net/get-altay/15709664/2a00000199fbf52e7be57a82b8e7aa3b6fd2/XXL" alt="Сибирь" loading="lazy"><img src="https://avatars.mds.yandex.net/get-altay/7659180/2a00000185f118bb5e8af1fa8a7780ab19d3/XXL" alt="Сибирь" loading="lazy" class="w2"><img src="https://avatars.mds.yandex.net/get-altay/16323929/2a00000199fbf51ce4768c00b581da1a8f40/XXL" alt="Сибирь" loading="lazy"><img src="https://avatars.mds.yandex.net/get-altay/17700564/2a0000019df3341165626e7218bb5b34a6dc/XXL" alt="Сибирь" loading="lazy"></div></div></section>
+<section id="reviews" style="padding-top:0"><div class="wrap"><div class="tag">Отзывы</div><h2>Нам <em style="color:var(--acc)">пишут</em></h2><p class="sub">Рейтинг 5,0 на Яндекс Картах.</p>
+<div class="grid3"><div class="card"><div class="stars">★★★★★</div><p>«Заказывала доставку из другого города — всё прошло отлично! Собрали очень нежную композицию, красиво упаковали и оперативно доставили.»</p><div class="who">mashaplechova0308, Яндекс Карты</div></div><div class="card"><div class="stars">★★★★★</div><p>«Отличное цветочное ателье. Флористы просто мастера своего дела!»</p><div class="who">Дмитрий Буренин, Яндекс Карты</div></div><div class="card"><div class="stars">★★★★★</div><p>«Не отказали в доставке, помогли с выбором и доставили вовремя.»</p><div class="who">центр и школа подологии, Яндекс Карты</div></div></div></div></section>
+<section id="contacts" style="padding-top:0"><div class="wrap"><div class="tag">Контакты</div><h2>Где нас <em style="color:var(--acc)">найти</em></h2><p class="sub">Магазин на улице Восход.</p><div class="cont"><div class="cl">
+<div><small>Адрес</small><b>ул. Восход, 46, Новосибирск</b></div><div><small>Телефон</small><b><a href="tel:+79139105599">+7 (913) 910-55-99</a></b></div>
+<div style="border:0"><a class="btn" target="_blank" rel="noopener" href="https://yandex.ru/maps/org/sibir/182789263168/">Построить маршрут</a></div></div><div class="map"><iframe src="https://yandex.ru/map-widget/v1/?ol=biz&oid=182789263168&z=17" loading="lazy" title="Карта" style="filter:saturate(.8)"></iframe></div></div></div></section>
+<footer><div class="wrap fl"><span>© 2026 Сибирь — цветочное ателье</span><span>Новосибирск · ул. Восход, 46</span></div></footer></body></html>
